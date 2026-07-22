@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Electric Pole Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="app.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚡ Smart Electric Pole Dashboard</h1>
+        <p>Real-Time Monitoring using Firebase</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>🚗 Vehicle Count</h2>
+            <h1 id="vehicleCount">0</h1>
+        </div>
+
+        <div class="card">
+            <h2>🌫 Gas Level</h2>
+            <h1 id="gasLevel">0</h1>
+        </div>
+
+        <div class="card">
+            <h2>🚦 Air Quality</h2>
+            <h1 id="status">NORMAL</h1>
+        </div>
+
+    </div>
+
+    <div class="time">
+        Last Updated :
+        <span id="time">--</span>
+    </div>
+
+    <div class="graphs">
+
+        <div class="graph-card">
+            <h2>Gas Level History</h2>
+            <canvas id="gasChart"></canvas>
+        </div>
+
+        <div class="graph-card">
+            <h2>Vehicle Count History</h2>
+            <canvas id="vehicleChart"></canvas>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
